@@ -3,7 +3,7 @@ project(Templates)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(target1 part1/main.cpp)
+add_executable(target1 part1/main.cpp part1/expressions.h)
 
 add_executable(target2 part2/main.cpp)
 

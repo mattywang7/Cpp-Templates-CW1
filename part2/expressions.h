@@ -24,7 +24,7 @@ class DivideByZeroException : public exception {
 };
 
 template<int LOWER, int UPPER>
-class Bound {
+class Bounds {
 public:
     enum {
         lowerBound = LOWER,

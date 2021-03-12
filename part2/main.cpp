@@ -22,7 +22,7 @@ typedef PrintBounds<Divide<Variable<Bound<lowerBound, upperBound>>, Literal<2>>>
 typedef PrintBounds<Times<Add<Variable<Bound<lowerBound, upperBound>>, Literal<3>>, Add<Variable<Bound<lowerBound, upperBound>>, Literal<5>>>> expression;
 
 // OutOfRangeException Test
-typedef Variable<Bound<lowerBound, upperBound>> expressionOutOfRange;
+typedef PrintBounds<Variable<Bound<lowerBound, upperBound>>> expressionOutOfRange;
 
 int main() {
     cout << "Add Test:" << endl << expressionAdd::eval(variable) << endl << "------------" << endl;

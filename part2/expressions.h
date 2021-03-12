@@ -140,6 +140,9 @@ template<class T>
 class PrintBounds {
 public:
     static inline int eval(int x) {
+        if (T::eval(x) < lowerBound || T::eval(x) > upperBound) {
+            throw OutOfRangeException();
+        }
         cout << T::lowerBound << " <= " << "The expression" << " <= " << T::upperBound << endl;
         return T::eval(x);
     }

@@ -32,4 +32,5 @@ int main() {
     cout << "(x_{0,5} + 3) * (x_{0,5} + 5): " << endl << expression::eval(variable) << endl << "------------" << endl;
 
     cout << "Input x: 10 for range [0, 5]" << endl << expressionOutOfRange::eval(outOfRange) << endl;
+    return 0;
 }
